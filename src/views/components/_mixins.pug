@@ -1,1 +1,22 @@
+mixin button(text, className, svgName)
+	button.button(class=className)
+		if svgName
+			svg
+				use(xlink:href=`./svg/sprite.svg#${svgName}`)
+		span= text
 
+mixin title(text, className)
+	.title(class= className)!= text
+
+mixin input(type, labelText, name, value)
+	if type === 'text'
+		label.text-label
+			span= labelText
+			input(type='text', name=name, value=value)
+	if type === 'checkbox'
+		label.checkbox-label
+			input(type='checkbox', name=name, value=value)
+			.checkbox-outer
+				svg
+					use(xlink:href='./svg/sprite.svg#check')
+			span= labelText

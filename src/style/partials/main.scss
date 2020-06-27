@@ -16,7 +16,6 @@ button,
 select,
 textarea {
 	font-family: $mainFont;
-	font-size: 16px;
 	line-height: 18px;
 	background-color: transparent;
 	border: 0;
@@ -28,10 +27,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	color: #323340;
+	font-size: 15px;
+	color: $text-color;
 	background: #ffffff;
 	font-family: $mainFont;
-	font-size: 16px;
 }
 
 .main {
@@ -40,8 +39,7 @@ body {
 
 .container {
 	box-sizing: border-box;
-	width: 1216px;
-	max-width: 95%;
+	width: 1280px;
 	max-width: calc(100% - 60px);
 	margin: 0 auto;
 

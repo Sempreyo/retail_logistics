@@ -10,4 +10,268 @@ block vars
 
 
 block main
+	.main
+		.first-screen
+			.container.first-screen__container
+				.first-screen__wrapper
+					.first-screen__title Доставляем сборные грузы
+						br
+						span качественнее и дешевле конкурентов
+					ul.first-screen__list
+						li.first-screen__list-item Доставка товаров Non-food во все федеральные сети Росии
+						li.first-screen__list-item Междугородняя доставка FTL
+						li.first-screen__list-item Доставка сборного груза
+					+button('Рассчитать стоимость', 'first-screen__button', 'calculate')
+				.first-screen__scroll-down
+					svg
+						use(xlink:href='./svg/sprite.svg#arrow-down')
 
+
+
+		.price
+			.container
+				+title('Тарифы')
+				.price__accordion
+					.price__accordion-item
+						.price__accordion-title
+							span Тарифы на перевозку сборных грузов по РФ
+							svg(class='price__accordion-title--rotate')
+								use(xlink:href='./svg/sprite.svg#accordion-arrow')
+						.price__accordion-content(style='display: block;')
+							.price__note Тарифы на перевозку указаны <span>в рублях за 1 кг груза</span>. Тариф для объемных грузов рассчитывается при плотности 1 куб.м = 250 кг.
+							.price__tabs
+								.price__tab.price__tab--active Из Москвы
+								.price__tab Из Санкт-Петербурга
+							.price__tab-content
+								table.price__table
+									thead
+										tr
+											th
+											th <span>до</span> 100 кг
+											th <span>до</span> 200 кг
+											th <span>до</span> 500 кг
+											th <span>до</span> 1000 кг
+											th <span>до</span> 1500 кг
+											th <span>до</span> 3000 кг
+											th <span>до</span> 4999 кг
+											th <span>от</span> 5000 кг
+									tbody
+										tr
+											td Санкт-петербург
+											td 5,99 ₽
+											td 5,99 ₽
+											td 5,99 ₽
+											td 5,7 ₽
+											td 5,6 ₽
+											td 5,5 ₽
+											td 5,1 ₽
+											td 4,75 ₽
+										tr
+											td Казань
+											td 9,99 ₽
+											td 9,79 ₽
+											td 9,49 ₽
+											td 9,19 ₽
+											td 8,99 ₽
+											td 8,69 ₽
+											td 7,99 ₽
+											td 7,79 ₽
+										tr
+											td Ростов-на-Дону
+											td 10,79 ₽
+											td 10,69 ₽
+											td 9,89 ₽
+											td 9,79 ₽
+											td 9,69 ₽
+											td 9,49 ₽
+											td 8,19 ₽
+											td 8,89 ₽
+										tr
+											td Самара
+											td 9,79 ₽
+											td 9,69 ₽
+											td 9,1 ₽
+											td 8,9 ₽
+											td 8,79 ₽
+											td 8,49 ₽
+											td 8,2 ₽
+											td 8,79 ₽
+										tr
+											td Волгоград
+											td 7,8 ₽
+											td 7,8 ₽
+											td 7,8 ₽
+											td 7,6 ₽
+											td 7,4 ₽
+											td 7,3 ₽
+											td 7,2 ₽
+											td 7 ₽
+										tr
+											td Краснодар
+											td 10,79 ₽
+											td 10,69 ₽
+											td 9,89 ₽
+											td 9,79 ₽
+											td 9,69 ₽
+											td 9,49 ₽
+											td 8,19 ₽
+											td 8,89 ₽
+										tr
+											td Екатеринбург
+											td 11,59 ₽
+											td 11,49 ₽
+											td 10,89 ₽
+											td 10,59 ₽
+											td 10,39 ₽
+											td 10,1 ₽
+											td 9,79 ₽
+											td 9,3 ₽
+								table.price__table
+							.price__min-cost *Минимальная стоимость перевозки – 400 ₽
+					.price__accordion-item
+						.price__accordion-title
+							span Тарифы адресной доставки от/до терминала в филиалах
+							svg
+								use(xlink:href='./svg/sprite.svg#accordion-arrow')
+						.price__accordion-content
+							.price__note Тарифы на перевозку указаны <span>в рублях за 1 кг груза</span>. Тариф для объемных грузов рассчитывается при плотности 1 куб.м = 250 кг.
+								.price__tabs
+									.price__tab.price__tab--active Из Москвы
+									.price__tab Из Санкт-Петербурга
+								.price__tab-content
+									table.price__table
+										thead
+											tr
+												th
+												th <span>до</span> 100 кг
+												th <span>до</span> 200 кг
+												th <span>до</span> 500 кг
+												th <span>до</span> 1000 кг
+												th <span>до</span> 1500 кг
+												th <span>до</span> 3000 кг
+												th <span>до</span> 4999 кг
+												th <span>от</span> 5000 кг
+										tbody
+											tr
+												td Санкт-петербург
+												td 5,99 ₽
+												td 5,99 ₽
+												td 5,99 ₽
+												td 5,7 ₽
+												td 5,6 ₽
+												td 5,5 ₽
+												td 5,1 ₽
+												td 4,75 ₽
+											tr
+												td Казань
+												td 9,99 ₽
+												td 9,79 ₽
+												td 9,49 ₽
+												td 9,19 ₽
+												td 8,99 ₽
+												td 8,69 ₽
+												td 7,99 ₽
+												td 7,79 ₽
+											tr
+												td Ростов-на-Дону
+												td 10,79 ₽
+												td 10,69 ₽
+												td 9,89 ₽
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,49 ₽
+												td 8,19 ₽
+												td 8,89 ₽
+											tr
+												td Самара
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,1 ₽
+												td 8,9 ₽
+												td 8,79 ₽
+												td 8,49 ₽
+												td 8,2 ₽
+												td 8,79 ₽
+											tr
+												td Волгоград
+												td 7,8 ₽
+												td 7,8 ₽
+												td 7,8 ₽
+												td 7,6 ₽
+												td 7,4 ₽
+												td 7,3 ₽
+												td 7,2 ₽
+												td 7 ₽
+											tr
+												td Краснодар
+												td 10,79 ₽
+												td 10,69 ₽
+												td 9,89 ₽
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,49 ₽
+												td 8,19 ₽
+												td 8,89 ₽
+											tr
+												td Екатеринбург
+												td 11,59 ₽
+												td 11,49 ₽
+												td 10,89 ₽
+												td 10,59 ₽
+												td 10,39 ₽
+												td 10,1 ₽
+												td 9,79 ₽
+												td 9,3 ₽
+									table.price__table
+								.price__min-cost *Минимальная стоимость перевозки – 400 ₽
+					.price__description-text
+						p Услуги ПРР ( погрузо-разгрузочные работы силами водителя экспедитора) за счёт Экспедитора предоставляются на партии груза,
+							|  расчётный вес которых не превышает 20 кг, где вес и объём одного грузового места не превышает 20 кг и 0,09 м3 соответственно,
+							|  при наличии работающего лифта и необходимости подъема груза не выше 3 этажа. Услуги ПРР за счёт Заказчика, а также услуги предоставления грузчиков,
+							|  согласовываются с экспедитором и оплачиваются дополнительно.
+						p Стоимость перевозки груза рассчитывается по фактическому или объемному весу, при этом выбирается большая из этих величин. 1м3 =250 кг,
+							|  поэтому для расчёта объёмного веса применяется формула: V *250 кг. При перевозке негабаритного груза, а также груза с использованием
+							|  дополнительной упаковки (обрешётки) согласно требованиям Экспедитора, взимается дополнительная плата в размере 20% от стоимости перевозки.
+							|  Груз считается негабаритным, если вес одного места превышает 500 кг, либо одно из измерений равно или больше 3 м.
+						p Бесплатное Хранение на складах транспортно-экспедиционной компании «РИТЕЙЛ-ЛОГИСТИКА» с момента поступления груза на склад составляет три дня,
+							|  дальнейшее хранение платное и составляет 70 руб.за 1 м3 или 50 руб./место в сутки для грузов менее 0,5м3.
+						p При необходимости  доставить груз Получателю «до двери» в день прибытия груза в город назначения, стоимость услуг экспедирования в городах
+							|  Москва и Санкт-Петербург увеличивается в 2 раза.
+						p Доставка по стандартному тарифу, осуществляется на следующий день после прибытия груза на терминал  в город назначения.
+						p «Холостой» пробег («пробег» автомобиля «до дверей» Отправителя/Получателя без Забора/Доставки по причинам, не зависящим от АО «Норд Вил»,
+							|  такие как неготовность груза к отправке, некорректные данные, указанные в заявке и т.д. и т.п.) равен стоимости забора/доставки груза
+							|  и рассчитывается на основании параметров, указанных в заявке, с учетом всех дополнительных услуг.
+					.price__more
+						span Показать полностью
+						svg
+							use(xlink:href='./svg/sprite.svg#accordion-arrow')
+
+
+		.calculate
+			.container.calculate__container
+				+title('Рассчитать стоимость <br> доставки груза', 'calculate__title')
+				form.calculate__form
+					.calculate__column
+						.calculate__input-row
+							+input('text', 'Откуда', 'from', 'Москва')
+						.calculate__input-row
+							+input('checkbox', 'Забрать по адресу', 'pickup_to_address')
+						.calculate__input-row.calculate__input-group
+							+input('text', 'Масса, кг', 'weight', '5')
+							+input('text', 'Объем, м3', 'capacity', '5')
+						.calculate__input-row
+							+input('text', 'Застраховать на сумму', 'insure_sum', '0')
+						.calculate__input-row
+							+input('checkbox', 'Возврат сопроводительных документов', 'documents_return')
+						.calculate__input-row
+							+input('checkbox', 'Стекло или хрупкий груз', 'fragile_load')
+
+					.calculate__column
+						.calculate__input-row
+							+input('text', 'Куда', 'to', 'Санкт -Петербург')
+						.calculate__input-row
+							+input('checkbox', 'Доставить по адресу', 'delivery_to_address')
+						.calculate__input-row
+							+input('checkbox', 'Негабаритный груз', 'oversized_cargo')
+						.calculate__input-row
+							+input('text', 'Добавить жесткую упаковку', 'hard_package', '0')

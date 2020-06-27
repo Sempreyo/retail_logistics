@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/main.css" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <header></header>
+    <main class="main">
+      <div class="main">
+        <div class="first-screen">
+          <div class="container first-screen__container">
+            <div class="first-screen__wrapper">
+              <div class="first-screen__title">Доставляем сборные грузы<br><span>качественнее и дешевле конкурентов</span></div>
+              <ul class="first-screen__list">
+                <li class="first-screen__list-item">Доставка товаров Non-food во все федеральные сети Росии</li>
+                <li class="first-screen__list-item">Междугородняя доставка FTL</li>
+                <li class="first-screen__list-item">Доставка сборного груза</li>
+              </ul>
+              <button class="button first-screen__button">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#calculate"></use>
+                </svg><span>Рассчитать стоимость</span>
+              </button>
+            </div>
+            <div class="first-screen__scroll-down">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="price">
+          <div class="container">
+            <div class="title">Тарифы</div>
+            <div class="price__accordion">
+              <div class="price__accordion-item">
+                <div class="price__accordion-title"><span>Тарифы на перевозку сборных грузов по РФ</span>
+                  <svg class="price__accordion-title--rotate">
+                    <use xlink:href="./svg/sprite.svg#accordion-arrow"></use>
+                  </svg>
+                </div>
+                <div class="price__accordion-content" style="display: block;">
+                  <div class="price__note">Тарифы на перевозку указаны <span>в рублях за 1 кг груза</span>. Тариф для объемных грузов рассчитывается при плотности 1 куб.м = 250 кг.</div>
+                  <div class="price__tabs">
+                    <div class="price__tab price__tab--active">Из Москвы</div>
+                    <div class="price__tab">Из Санкт-Петербурга</div>
+                  </div>
+                  <div class="price__tab-content">
+                    <table class="price__table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th><span>до</span> 100 кг</th>
+                          <th><span>до</span> 200 кг</th>
+                          <th><span>до</span> 500 кг</th>
+                          <th><span>до</span> 1000 кг</th>
+                          <th><span>до</span> 1500 кг</th>
+                          <th><span>до</span> 3000 кг</th>
+                          <th><span>до</span> 4999 кг</th>
+                          <th><span>от</span> 5000 кг</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Санкт-петербург</td>
+                          <td>5,99 ₽</td>
+                          <td>5,99 ₽</td>
+                          <td>5,99 ₽</td>
+                          <td>5,7 ₽</td>
+                          <td>5,6 ₽</td>
+                          <td>5,5 ₽</td>
+                          <td>5,1 ₽</td>
+                          <td>4,75 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Казань</td>
+                          <td>9,99 ₽</td>
+                          <td>9,79 ₽</td>
+                          <td>9,49 ₽</td>
+                          <td>9,19 ₽</td>
+                          <td>8,99 ₽</td>
+                          <td>8,69 ₽</td>
+                          <td>7,99 ₽</td>
+                          <td>7,79 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Ростов-на-Дону</td>
+                          <td>10,79 ₽</td>
+                          <td>10,69 ₽</td>
+                          <td>9,89 ₽</td>
+                          <td>9,79 ₽</td>
+                          <td>9,69 ₽</td>
+                          <td>9,49 ₽</td>
+                          <td>8,19 ₽</td>
+                          <td>8,89 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Самара</td>
+                          <td>9,79 ₽</td>
+                          <td>9,69 ₽</td>
+                          <td>9,1 ₽</td>
+                          <td>8,9 ₽</td>
+                          <td>8,79 ₽</td>
+                          <td>8,49 ₽</td>
+                          <td>8,2 ₽</td>
+                          <td>8,79 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Волгоград</td>
+                          <td>7,8 ₽</td>
+                          <td>7,8 ₽</td>
+                          <td>7,8 ₽</td>
+                          <td>7,6 ₽</td>
+                          <td>7,4 ₽</td>
+                          <td>7,3 ₽</td>
+                          <td>7,2 ₽</td>
+                          <td>7 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Краснодар</td>
+                          <td>10,79 ₽</td>
+                          <td>10,69 ₽</td>
+                          <td>9,89 ₽</td>
+                          <td>9,79 ₽</td>
+                          <td>9,69 ₽</td>
+                          <td>9,49 ₽</td>
+                          <td>8,19 ₽</td>
+                          <td>8,89 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Екатеринбург</td>
+                          <td>11,59 ₽</td>
+                          <td>11,49 ₽</td>
+                          <td>10,89 ₽</td>
+                          <td>10,59 ₽</td>
+                          <td>10,39 ₽</td>
+                          <td>10,1 ₽</td>
+                          <td>9,79 ₽</td>
+                          <td>9,3 ₽</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="price__table"></table>
+                  </div>
+                  <div class="price__min-cost">*Минимальная стоимость перевозки – 400 ₽</div>
+                </div>
+              </div>
+              <div class="price__accordion-item">
+                <div class="price__accordion-title"><span>Тарифы адресной доставки от/до терминала в филиалах</span>
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#accordion-arrow"></use>
+                  </svg>
+                </div>
+                <div class="price__accordion-content">
+                  <div class="price__note">Тарифы на перевозку указаны <span>в рублях за 1 кг груза</span>. Тариф для объемных грузов рассчитывается при плотности 1 куб.м = 250 кг.
+                    <div class="price__tabs">
+                      <div class="price__tab price__tab--active">Из Москвы</div>
+                      <div class="price__tab">Из Санкт-Петербурга</div>
+                    </div>
+                    <div class="price__tab-content">
+                      <table class="price__table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th><span>до</span> 100 кг</th>
+                            <th><span>до</span> 200 кг</th>
+                            <th><span>до</span> 500 кг</th>
+                            <th><span>до</span> 1000 кг</th>
+                            <th><span>до</span> 1500 кг</th>
+                            <th><span>до</span> 3000 кг</th>
+                            <th><span>до</span> 4999 кг</th>
+                            <th><span>от</span> 5000 кг</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Санкт-петербург</td>
+                            <td>5,99 ₽</td>
+                            <td>5,99 ₽</td>
+                            <td>5,99 ₽</td>
+                            <td>5,7 ₽</td>
+                            <td>5,6 ₽</td>
+                            <td>5,5 ₽</td>
+                            <td>5,1 ₽</td>
+                            <td>4,75 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Казань</td>
+                            <td>9,99 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>9,19 ₽</td>
+                            <td>8,99 ₽</td>
+                            <td>8,69 ₽</td>
+                            <td>7,99 ₽</td>
+                            <td>7,79 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Ростов-на-Дону</td>
+                            <td>10,79 ₽</td>
+                            <td>10,69 ₽</td>
+                            <td>9,89 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>8,19 ₽</td>
+                            <td>8,89 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Самара</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,1 ₽</td>
+                            <td>8,9 ₽</td>
+                            <td>8,79 ₽</td>
+                            <td>8,49 ₽</td>
+                            <td>8,2 ₽</td>
+                            <td>8,79 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Волгоград</td>
+                            <td>7,8 ₽</td>
+                            <td>7,8 ₽</td>
+                            <td>7,8 ₽</td>
+                            <td>7,6 ₽</td>
+                            <td>7,4 ₽</td>
+                            <td>7,3 ₽</td>
+                            <td>7,2 ₽</td>
+                            <td>7 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Краснодар</td>
+                            <td>10,79 ₽</td>
+                            <td>10,69 ₽</td>
+                            <td>9,89 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>8,19 ₽</td>
+                            <td>8,89 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Екатеринбург</td>
+                            <td>11,59 ₽</td>
+                            <td>11,49 ₽</td>
+                            <td>10,89 ₽</td>
+                            <td>10,59 ₽</td>
+                            <td>10,39 ₽</td>
+                            <td>10,1 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,3 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="price__table"></table>
+                    </div>
+                    <div class="price__min-cost">*Минимальная стоимость перевозки – 400 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="price__description-text">
+                <p>
+                  Услуги ПРР ( погрузо-разгрузочные работы силами водителя экспедитора) за счёт Экспедитора предоставляются на партии груза, расчётный вес которых не превышает 20 кг, где вес и объём одного грузового места не превышает 20 кг и 0,09 м3 соответственно,
+                   при наличии работающего лифта и необходимости подъема груза не выше 3 этажа. Услуги ПРР за счёт Заказчика, а также услуги предоставления грузчиков,
+                   согласовываются с экспедитором и оплачиваются дополнительно.
+                </p>
+                <p>
+                  Стоимость перевозки груза рассчитывается по фактическому или объемному весу, при этом выбирается большая из этих величин. 1м3 =250 кг, поэтому для расчёта объёмного веса применяется формула: V *250 кг. При перевозке негабаритного груза, а также груза с использованием
+                   дополнительной упаковки (обрешётки) согласно требованиям Экспедитора, взимается дополнительная плата в размере 20% от стоимости перевозки.
+                   Груз считается негабаритным, если вес одного места превышает 500 кг, либо одно из измерений равно или больше 3 м.
+                </p>
+                <p>
+                  Бесплатное Хранение на складах транспортно-экспедиционной компании «РИТЕЙЛ-ЛОГИСТИКА» с момента поступления груза на склад составляет три дня, дальнейшее хранение платное и составляет 70 руб.за 1 м3 или 50 руб./место в сутки для грузов менее 0,5м3.</p>
+                <p>
+                  При необходимости  доставить груз Получателю «до двери» в день прибытия груза в город назначения, стоимость услуг экспедирования в городах Москва и Санкт-Петербург увеличивается в 2 раза.</p>
+                <p>Доставка по стандартному тарифу, осуществляется на следующий день после прибытия груза на терминал  в город назначения.</p>
+                <p>
+                  «Холостой» пробег («пробег» автомобиля «до дверей» Отправителя/Получателя без Забора/Доставки по причинам, не зависящим от АО «Норд Вил», такие как неготовность груза к отправке, некорректные данные, указанные в заявке и т.д. и т.п.) равен стоимости забора/доставки груза
+                   и рассчитывается на основании параметров, указанных в заявке, с учетом всех дополнительных услуг.
+                </p>
+              </div>
+              <div class="price__more"><span>Показать полностью</span>
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#accordion-arrow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calculate">
+          <div class="container calculate__container">
+            <div class="title calculate__title">Рассчитать стоимость <br> доставки груза</div>
+            <form class="calculate__form">
+              <div class="calculate__column">
+                <div class="calculate__input-row">
+                  <label class="text-label"><span>Откуда</span>
+                    <input type="text" name="from" value="Москва">
+                  </label>
+                </div>
+                <div class="calculate__input-row">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="pickup_to_address">
+                    <div class="checkbox-outer">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#check"></use>
+                      </svg>
+                    </div><span>Забрать по адресу</span>
+                  </label>
+                </div>
+                <div class="calculate__input-row calculate__input-group">
+                  <label class="text-label"><span>Масса, кг</span>
+                    <input type="text" name="weight" value="5">
+                  </label>
+                  <label class="text-label"><span>Объем, м3</span>
+                    <input type="text" name="capacity" value="5">
+                  </label>
+                </div>
+                <div class="calculate__input-row">
+                  <label class="text-label"><span>Застраховать на сумму</span>
+                    <input type="text" name="insure_sum" value="0">
+                  </label>
+                </div>
+                <div class="calculate__input-row">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="documents_return">
+                    <div class="checkbox-outer">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#check"></use>
+                      </svg>
+                    </div><span>Возврат сопроводительных документов</span>
+                  </label>
+                </div>
+                <div class="calculate__input-row">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="fragile_load">
+                    <div class="checkbox-outer">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#check"></use>
+                      </svg>
+                    </div><span>Стекло или хрупкий груз</span>
+                  </label>
+                </div>
+              </div>
+              <div class="calculate__column">
+                <div class="calculate__input-row">
+                  <label class="text-label"><span>Куда</span>
+                    <input type="text" name="to" value="Санкт -Петербург">
+                  </label>
+                </div>
+                <div class="calculate__input-row">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="delivery_to_address">
+                    <div class="checkbox-outer">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#check"></use>
+                      </svg>
+                    </div><span>Доставить по адресу</span>
+                  </label>
+                </div>
+                <div class="calculate__input-row">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="oversized_cargo">
+                    <div class="checkbox-outer">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#check"></use>
+                      </svg>
+                    </div><span>Негабаритный груз</span>
+                  </label>
+                </div>
+                <div class="calculate__input-row">
+                  <label class="text-label"><span>Добавить жесткую упаковку</span>
+                    <input type="text" name="hard_package" value="0">
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

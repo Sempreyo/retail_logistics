@@ -8,4 +8,4 @@
 /* my scripts */
 
 //= partials/components.js
-
+//= partials/price.js
