@@ -28,15 +28,13 @@
                   <use xlink:href="./svg/sprite.svg#calculate"></use>
                 </svg><span>Рассчитать стоимость</span>
               </button>
-            </div>
-            <div class="first-screen__scroll-down">
+            </div><a class="first-screen__scroll-down" href="#price">
               <svg>
                 <use xlink:href="./svg/sprite.svg#arrow-down"></use>
-              </svg>
-            </div>
+              </svg></a>
           </div>
         </div>
-        <div class="price">
+        <div class="price" id="price">
           <div class="container">
             <div class="title">Тарифы</div>
             <div class="price__accordion">
@@ -52,117 +50,103 @@
                     <div class="price__tab price__tab--active">Из Москвы</div>
                     <div class="price__tab">Из Санкт-Петербурга</div>
                   </div>
-                  <div class="price__tab-content">
-                    <table class="price__table">
-                      <thead>
-                        <tr>
-                          <th></th>
-                          <th><span>до</span> 100 кг</th>
-                          <th><span>до</span> 200 кг</th>
-                          <th><span>до</span> 500 кг</th>
-                          <th><span>до</span> 1000 кг</th>
-                          <th><span>до</span> 1500 кг</th>
-                          <th><span>до</span> 3000 кг</th>
-                          <th><span>до</span> 4999 кг</th>
-                          <th><span>от</span> 5000 кг</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Санкт-петербург</td>
-                          <td>5,99 ₽</td>
-                          <td>5,99 ₽</td>
-                          <td>5,99 ₽</td>
-                          <td>5,7 ₽</td>
-                          <td>5,6 ₽</td>
-                          <td>5,5 ₽</td>
-                          <td>5,1 ₽</td>
-                          <td>4,75 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Казань</td>
-                          <td>9,99 ₽</td>
-                          <td>9,79 ₽</td>
-                          <td>9,49 ₽</td>
-                          <td>9,19 ₽</td>
-                          <td>8,99 ₽</td>
-                          <td>8,69 ₽</td>
-                          <td>7,99 ₽</td>
-                          <td>7,79 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Ростов-на-Дону</td>
-                          <td>10,79 ₽</td>
-                          <td>10,69 ₽</td>
-                          <td>9,89 ₽</td>
-                          <td>9,79 ₽</td>
-                          <td>9,69 ₽</td>
-                          <td>9,49 ₽</td>
-                          <td>8,19 ₽</td>
-                          <td>8,89 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Самара</td>
-                          <td>9,79 ₽</td>
-                          <td>9,69 ₽</td>
-                          <td>9,1 ₽</td>
-                          <td>8,9 ₽</td>
-                          <td>8,79 ₽</td>
-                          <td>8,49 ₽</td>
-                          <td>8,2 ₽</td>
-                          <td>8,79 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Волгоград</td>
-                          <td>7,8 ₽</td>
-                          <td>7,8 ₽</td>
-                          <td>7,8 ₽</td>
-                          <td>7,6 ₽</td>
-                          <td>7,4 ₽</td>
-                          <td>7,3 ₽</td>
-                          <td>7,2 ₽</td>
-                          <td>7 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Краснодар</td>
-                          <td>10,79 ₽</td>
-                          <td>10,69 ₽</td>
-                          <td>9,89 ₽</td>
-                          <td>9,79 ₽</td>
-                          <td>9,69 ₽</td>
-                          <td>9,49 ₽</td>
-                          <td>8,19 ₽</td>
-                          <td>8,89 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Екатеринбург</td>
-                          <td>11,59 ₽</td>
-                          <td>11,49 ₽</td>
-                          <td>10,89 ₽</td>
-                          <td>10,59 ₽</td>
-                          <td>10,39 ₽</td>
-                          <td>10,1 ₽</td>
-                          <td>9,79 ₽</td>
-                          <td>9,3 ₽</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table class="price__table"></table>
-                  </div>
-                  <div class="price__min-cost">*Минимальная стоимость перевозки – 400 ₽</div>
-                </div>
-              </div>
-              <div class="price__accordion-item">
-                <div class="price__accordion-title"><span>Тарифы адресной доставки от/до терминала в филиалах</span>
-                  <svg>
-                    <use xlink:href="./svg/sprite.svg#accordion-arrow"></use>
-                  </svg>
-                </div>
-                <div class="price__accordion-content">
-                  <div class="price__note">Тарифы на перевозку указаны <span>в рублях за 1 кг груза</span>. Тариф для объемных грузов рассчитывается при плотности 1 куб.м = 250 кг.
-                    <div class="price__tabs">
-                      <div class="price__tab price__tab--active">Из Москвы</div>
-                      <div class="price__tab">Из Санкт-Петербурга</div>
+                  <div class="price__tab-content-wrapper">
+                    <div class="price__tab-content">
+                      <table class="price__table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th><span>до</span> 100 кг</th>
+                            <th><span>до</span> 200 кг</th>
+                            <th><span>до</span> 500 кг</th>
+                            <th><span>до</span> 1000 кг</th>
+                            <th><span>до</span> 1500 кг</th>
+                            <th><span>до</span> 3000 кг</th>
+                            <th><span>до</span> 4999 кг</th>
+                            <th><span>от</span> 5000 кг</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Санкт-петербург</td>
+                            <td>5,99 ₽</td>
+                            <td>5,99 ₽</td>
+                            <td>5,99 ₽</td>
+                            <td>5,7 ₽</td>
+                            <td>5,6 ₽</td>
+                            <td>5,5 ₽</td>
+                            <td>5,1 ₽</td>
+                            <td>4,75 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Казань</td>
+                            <td>9,99 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>9,19 ₽</td>
+                            <td>8,99 ₽</td>
+                            <td>8,69 ₽</td>
+                            <td>7,99 ₽</td>
+                            <td>7,79 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Ростов-на-Дону</td>
+                            <td>10,79 ₽</td>
+                            <td>10,69 ₽</td>
+                            <td>9,89 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>8,19 ₽</td>
+                            <td>8,89 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Самара</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,1 ₽</td>
+                            <td>8,9 ₽</td>
+                            <td>8,79 ₽</td>
+                            <td>8,49 ₽</td>
+                            <td>8,2 ₽</td>
+                            <td>8,79 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Волгоград</td>
+                            <td>7,8 ₽</td>
+                            <td>7,8 ₽</td>
+                            <td>7,8 ₽</td>
+                            <td>7,6 ₽</td>
+                            <td>7,4 ₽</td>
+                            <td>7,3 ₽</td>
+                            <td>7,2 ₽</td>
+                            <td>7 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Краснодар</td>
+                            <td>10,79 ₽</td>
+                            <td>10,69 ₽</td>
+                            <td>9,89 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>8,19 ₽</td>
+                            <td>8,89 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Екатеринбург</td>
+                            <td>11,59 ₽</td>
+                            <td>11,49 ₽</td>
+                            <td>10,89 ₽</td>
+                            <td>10,59 ₽</td>
+                            <td>10,39 ₽</td>
+                            <td>10,1 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,3 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="price__min-cost">*Минимальная стоимость перевозки – 400 ₽</div>
                     </div>
                     <div class="price__tab-content">
                       <table class="price__table">
@@ -259,9 +243,218 @@
                           </tr>
                         </tbody>
                       </table>
-                      <table class="price__table"></table>
+                      <div class="price__min-cost">*Минимальная стоимость перевозки – 400 ₽</div>
                     </div>
-                    <div class="price__min-cost">*Минимальная стоимость перевозки – 400 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="price__accordion-item">
+                <div class="price__accordion-title"><span>Тарифы адресной доставки от/до терминала в филиалах</span>
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#accordion-arrow"></use>
+                  </svg>
+                </div>
+                <div class="price__accordion-content">
+                  <div class="price__note">Тарифы на перевозку указаны <span>в рублях за 1 кг груза</span>. Тариф для объемных грузов рассчитывается при плотности 1 куб.м = 250 кг.</div>
+                  <div class="price__tabs">
+                    <div class="price__tab price__tab--active">Из Москвы</div>
+                    <div class="price__tab">Из Санкт-Петербурга</div>
+                  </div>
+                  <div class="price__tab-content-wrapper">
+                    <div class="price__tab-content">
+                      <table class="price__table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th><span>до</span> 100 кг</th>
+                            <th><span>до</span> 200 кг</th>
+                            <th><span>до</span> 500 кг</th>
+                            <th><span>до</span> 1000 кг</th>
+                            <th><span>до</span> 1500 кг</th>
+                            <th><span>до</span> 3000 кг</th>
+                            <th><span>до</span> 4999 кг</th>
+                            <th><span>от</span> 5000 кг</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Санкт-петербург</td>
+                            <td>5,99 ₽</td>
+                            <td>5,99 ₽</td>
+                            <td>5,99 ₽</td>
+                            <td>5,7 ₽</td>
+                            <td>5,6 ₽</td>
+                            <td>5,5 ₽</td>
+                            <td>5,1 ₽</td>
+                            <td>4,75 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Казань</td>
+                            <td>9,99 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>9,19 ₽</td>
+                            <td>8,99 ₽</td>
+                            <td>8,69 ₽</td>
+                            <td>7,99 ₽</td>
+                            <td>7,79 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Ростов-на-Дону</td>
+                            <td>10,79 ₽</td>
+                            <td>10,69 ₽</td>
+                            <td>9,89 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>8,19 ₽</td>
+                            <td>8,89 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Самара</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,1 ₽</td>
+                            <td>8,9 ₽</td>
+                            <td>8,79 ₽</td>
+                            <td>8,49 ₽</td>
+                            <td>8,2 ₽</td>
+                            <td>8,79 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Волгоград</td>
+                            <td>7,8 ₽</td>
+                            <td>7,8 ₽</td>
+                            <td>7,8 ₽</td>
+                            <td>7,6 ₽</td>
+                            <td>7,4 ₽</td>
+                            <td>7,3 ₽</td>
+                            <td>7,2 ₽</td>
+                            <td>7 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Краснодар</td>
+                            <td>10,79 ₽</td>
+                            <td>10,69 ₽</td>
+                            <td>9,89 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>8,19 ₽</td>
+                            <td>8,89 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Екатеринбург</td>
+                            <td>11,59 ₽</td>
+                            <td>11,49 ₽</td>
+                            <td>10,89 ₽</td>
+                            <td>10,59 ₽</td>
+                            <td>10,39 ₽</td>
+                            <td>10,1 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,3 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="price__min-cost">*Минимальная стоимость перевозки – 400 ₽</div>
+                    </div>
+                    <div class="price__tab-content">
+                      <table class="price__table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th><span>до</span> 100 кг</th>
+                            <th><span>до</span> 200 кг</th>
+                            <th><span>до</span> 500 кг</th>
+                            <th><span>до</span> 1000 кг</th>
+                            <th><span>до</span> 1500 кг</th>
+                            <th><span>до</span> 3000 кг</th>
+                            <th><span>до</span> 4999 кг</th>
+                            <th><span>от</span> 5000 кг</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Санкт-петербург</td>
+                            <td>5,99 ₽</td>
+                            <td>5,99 ₽</td>
+                            <td>5,99 ₽</td>
+                            <td>5,7 ₽</td>
+                            <td>5,6 ₽</td>
+                            <td>5,5 ₽</td>
+                            <td>5,1 ₽</td>
+                            <td>4,75 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Казань</td>
+                            <td>9,99 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>9,19 ₽</td>
+                            <td>8,99 ₽</td>
+                            <td>8,69 ₽</td>
+                            <td>7,99 ₽</td>
+                            <td>7,79 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Ростов-на-Дону</td>
+                            <td>10,79 ₽</td>
+                            <td>10,69 ₽</td>
+                            <td>9,89 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>8,19 ₽</td>
+                            <td>8,89 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Самара</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,1 ₽</td>
+                            <td>8,9 ₽</td>
+                            <td>8,79 ₽</td>
+                            <td>8,49 ₽</td>
+                            <td>8,2 ₽</td>
+                            <td>8,79 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Волгоград</td>
+                            <td>7,8 ₽</td>
+                            <td>7,8 ₽</td>
+                            <td>7,8 ₽</td>
+                            <td>7,6 ₽</td>
+                            <td>7,4 ₽</td>
+                            <td>7,3 ₽</td>
+                            <td>7,2 ₽</td>
+                            <td>7 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Краснодар</td>
+                            <td>10,79 ₽</td>
+                            <td>10,69 ₽</td>
+                            <td>9,89 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,69 ₽</td>
+                            <td>9,49 ₽</td>
+                            <td>8,19 ₽</td>
+                            <td>8,89 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Екатеринбург</td>
+                            <td>11,59 ₽</td>
+                            <td>11,49 ₽</td>
+                            <td>10,89 ₽</td>
+                            <td>10,59 ₽</td>
+                            <td>10,39 ₽</td>
+                            <td>10,1 ₽</td>
+                            <td>9,79 ₽</td>
+                            <td>9,3 ₽</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="price__min-cost">*Минимальная стоимость перевозки – 400 ₽</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -380,12 +573,319 @@
                   </label>
                 </div>
               </div>
+              <div class="calculate__request">
+                <div class="calculate__bg"><img src="./img/pattern-black.png" alt="pattern-black"><img src="./img/pattern-gray.png" alt="pattern-gray"></div>
+                <div class="calculate__block">
+                  <div class="calculate__total">
+                    <div class="calculate__total-text">Итоговая стоимость услуг</div>
+                    <div class="calculate__total-price">1 760 ₽</div>
+                    <div class="calculate__total-note">Доставка на следующий день</div>
+                  </div>
+                  <div class="calculate__price-item">Перевозка от двери до двери
+                    <div class="calculate__sum calculate__sum--door">3 810 ₽</div>
+                  </div>
+                  <div class="calculate__price-item">Стоимость межтерминальной перевозки
+                    <div class="calculate__sum calculate__sum--terminal">1 760 ₽</div>
+                  </div>
+                  <div class="calculate__tariff">
+                    <div class="calculate__tariff-row">
+                      <div class="calculate__tariff-name">Ваш тариф</div>
+                      <div class="calculate__tariff-price">5.99 ₽/кг</div>
+                    </div>
+                    <div class="calculate__tariff-row">
+                      <div class="calculate__tariff-name">Доставка по Москве</div>
+                      <div class="calculate__tariff-price">1 150 ₽</div>
+                    </div>
+                    <div class="calculate__tariff-row">
+                      <div class="calculate__tariff-name">Доставка по Санкт-Петербургу</div>
+                      <div class="calculate__tariff-price">900 ₽</div>
+                    </div>
+                  </div>
+                  <button class="button calculate__button"><span>Отправить заявку</span>
+                  </button>
+                  <div class="calculate__print-report">Распечатать отчет</div>
+                </div>
+              </div>
             </form>
+          </div>
+        </div>
+        <div class="documentation">
+          <div class="container">
+            <div class="title">Документация</div>
+            <div class="documentation__files"><a class="documentation__link" href="#">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#doc"></use>
+                </svg>
+                <div class="documentation__link-wrapper">
+                  <div class="documentation__name">Бланк завки на адресный забор груза</div>
+                  <div class="documentation__download">Скачать</div>
+                </div></a><a class="documentation__link" href="#">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#doc"></use>
+                </svg>
+                <div class="documentation__link-wrapper">
+                  <div class="documentation__name">Договор на перевозку грузов автомобильным транспортом Ритейл логистика</div>
+                  <div class="documentation__download">Скачать</div>
+                </div></a><a class="documentation__link" href="#">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#xls"></use>
+                </svg>
+                <div class="documentation__link-wrapper">
+                  <div class="documentation__name">Обязательные правила перевозки</div>
+                  <div class="documentation__download">Скачать</div>
+                </div></a><a class="documentation__link" href="#">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#xls"></use>
+                </svg>
+                <div class="documentation__link-wrapper">
+                  <div class="documentation__name">Обязательные правила перевозки</div>
+                  <div class="documentation__download">Скачать</div>
+                </div></a><a class="documentation__link" href="#">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#doc"></use>
+                </svg>
+                <div class="documentation__link-wrapper">
+                  <div class="documentation__name">Бланк завки на адресный забор груза</div>
+                  <div class="documentation__download">Скачать</div>
+                </div></a><a class="documentation__link" href="#">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#doc"></use>
+                </svg>
+                <div class="documentation__link-wrapper">
+                  <div class="documentation__name">Договор на перевозку грузов автомобильным транспортом Ритейл логистика</div>
+                  <div class="documentation__download">Скачать</div>
+                </div></a><a class="documentation__link" href="#">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#doc"></use>
+                </svg>
+                <div class="documentation__link-wrapper">
+                  <div class="documentation__name">Бланк завки на адресный забор груза</div>
+                  <div class="documentation__download">Скачать</div>
+                </div></a><a class="documentation__link" href="#">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#doc"></use>
+                </svg>
+                <div class="documentation__link-wrapper">
+                  <div class="documentation__name">Договор на перевозку грузов автомобильным транспортом Ритейл логистика</div>
+                  <div class="documentation__download">Скачать</div>
+                </div></a><a class="documentation__link" href="#">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#xls"></use>
+                </svg>
+                <div class="documentation__link-wrapper">
+                  <div class="documentation__name">Обязательные правила перевозки</div>
+                  <div class="documentation__download">Скачать</div>
+                </div></a></div>
+          </div>
+        </div>
+        <div class="work">
+          <div class="container work__container">
+            <div class="title work__title">Как мы работаем</div>
+            <div class="work__scheme"></div>
+          </div>
+        </div>
+        <div class="commercial">
+          <div class="container commercial__container">
+            <div class="commercial__bg"><img src="./img/pattern-gray.png" alt="pattern-gray"></div>
+            <div class="commercial__outer">
+              <div class="title">Коммерческая информация</div>
+              <div class="commercial__block">
+                <div class="commercial__nav">
+                  <ul class="commercial__tabs">
+                    <li class="commercial__tab">Отправить груз от адреса</li>
+                    <li class="commercial__tab">Отправить груз с терминала</li>
+                    <li class="commercial__tab">Ускорить отправку груза с терминала</li>
+                    <li class="commercial__tab">Получить груз на адресе</li>
+                    <li class="commercial__tab">Получить груз на терминале</li>
+                    <li class="commercial__tab">Уточнить информацию о заказе</li>
+                    <li class="commercial__tab commercial__tab--active">Оплата банковской картой</li>
+                    <li class="commercial__tab">Оплата по безналичному счету</li>
+                    <li class="commercial__tab">Оплата наличными</li>
+                    <li class="commercial__tab">Запросить бухгалтерские документы</li>
+                    <li class="commercial__tab">Заключить договор</li>
+                    <li class="commercial__tab">Автоматизация работы с заказами</li>
+                  </ul>
+                  <div class="commercial__other-question">Задать другой вопрос</div>
+                </div>
+                <div class="commercial__content">
+                  <div class="commercial__content-item">1</div>
+                  <div class="commercial__content-item">2</div>
+                  <div class="commercial__content-item">3</div>
+                  <div class="commercial__content-item">4</div>
+                  <div class="commercial__content-item">5</div>
+                  <div class="commercial__content-item">6</div>
+                  <div class="commercial__content-item" style="display: block;">
+                    <div class="commercial__content-title">Оплата банковской картой</div>
+                    <ul>
+                      <li>
+                        <span>1</span> Повседневная практика показывает, что повышение уровня гражданского сознания обеспечивает широкому кругу (специалистов) участие в формировании соответствующих условий активизации.</li>
+                      <li>
+                        <span>2</span> В своём стремлении улучшить пользовательский опыт мы упускаем, что некоторые особенности внутренней политики представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть объединены в целые кластеры себе подобных.</li>
+                      <li>
+                        <span>3</span> В рамках спецификации современных стандартов, явные признаки победы институционализации формируют глобальную экономическую сеть и при этом - ассоциативно распределены по отраслям!</li>
+                      <li><span>4</span> Равным образом, внедрение современных методик не даёт нам иного выбора, кроме определения благоприятных перспектив.</li>
+                      <li>
+                        <span>5</span> Реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть представлены в исключительно положительном свете.</li>
+                    </ul>
+                    <p>
+                      Ясность нашей позиции очевидна: начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+                    <p>
+                      Есть над чем задуматься: реплицированные с зарубежных источников, современные исследования рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
+                  </div>
+                  <div class="commercial__content-item">8</div>
+                  <div class="commercial__content-item">9</div>
+                  <div class="commercial__content-item">10</div>
+                  <div class="commercial__content-item">11</div>
+                  <div class="commercial__content-item">12</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about">
+          <div class="container about__container">
+            <div class="title">О компании</div>
+            <div class="about__block">
+              <div class="about__img-group">
+                <div class="about__circle"></div><img class="about__pattern" src="./img/pattern-gray.png" alt="pattern-gray"><img class="about__car" src="./img/pogr.png" alt="pogr">
+              </div>
+              <div class="about__content">
+                <div class="about__title">«Ритейл логистика»</div>
+                <div class="about__description">
+                  <p>
+                    Повседневная практика показывает, что убеждённость некоторых оппонентов предоставляет широкие возможности для вывода текущих активов. Каждый из нас понимает очевидную вещь: понимание сути ресурсосберегающих технологий говорит о возможностях вывода текущих активов.</p>
+                  <p>
+                    Задача организации, в особенности же синтетическое тестирование играет важную роль в формировании дальнейших направлений развития. Каждый из нас понимает очевидную вещь: высокотехнологичная концепция общественного уклада способствует подготовке и реализации
+                     укрепления моральных ценностей.
+                  </p>
+                </div>
+                <div class="about__details">
+                  <div class="about__details-col">
+                    <p>ОГРН 1187746375442</p>
+                    <p>ИНН 9721064092</p>
+                    <p>КПП  772101001</p>
+                  </div>
+                  <div class="about__details-col">
+                    <p>Юридический адрес: 109428, г. Москва, Рязанский проспект, д.16, строение 3,помещение  23</p>
+                    <p>Расчетный счет 40702810001700005584</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="delivery">
+          <div class="container">
+            <div class="title">Паллетная доставка в гипермаркеты и РЦ</div>
+            <div class="delivery__block">
+              <div class="delivery__col">
+                <div class="delivery__description">
+                  <p>
+                    Компания «Ритейл Логистика» осуществляет доставку товаров во все крупные сетевые магазины России на привлекательных условиях для поставщиков FMCG и DIY товаров. Специальные тарифы на паллетную доставку, услуга «возврат документов», точное время и дата сдачи
+                     груза – мы делаем все, чтобы нашим клиентам было комфортно!
+                  </p>
+                  <p>Мы предоставляем следующие услуги:</p>
+                  <ul>
+                    <li>перевозка груза от нашего склада в г.Москве до склада в городе получателя;</li>
+                    <li>складская обработка груза;</li>
+                    <li>автоэкспедирование до получателя;</li>
+                    <li>выезд за пределы города до 50 км на круг;</li>
+                    <li>погрузо-разгрузочные работы и НДС 20%.</li>
+                  </ul>
+                </div>
+                <div class="delivery__download-price">Скачать паллетный прайс</div>
+              </div>
+              <div class="delivery__col"><img src="./img/delivery.jpg" alt="delivery"></div>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <div class="container">
+            <div class="form__title">Остались вопросы?</div>
+            <div class="form__subtitle">Задайте их нашему менеджеру. Он ответит в течение 15 минут</div>
+            <form action="" method="POST">
+              <div class="form__inputs">
+                <label class="text-label"><span></span>
+                  <input type="text" name="your_name" value="" placeholder="Ваше имя">
+                </label>
+                <label class="text-label"><span></span>
+                  <input type="text" name="phone" value="" placeholder="+7 (___) ___ __-__">
+                </label>
+                <label class="text-label"><span></span>
+                  <input type="text" name="email" value="" placeholder="Ваш email">
+                </label>
+              </div>
+              <button class="button form__button"><span>Отправить заявку</span>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="container contacts__container">
+            <div class="title contacts__title">Наши контакты</div>
+            <div class="contacts__block">
+              <div class="contacts__col">
+                <div class="contacts__map">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2ef1d71cf01cdcebc06d54a8fbd108f36edb4ac3da3801ba678543eab48c451e&amp;amp;source=constructor" width="620" height="454" frameborder="0"></iframe>
+                </div>
+                <div class="contacts__info">
+                  <div class="contacts__info-item">
+                    <svg>
+                      <use xlink:href="./svg/sprite.svg#marker"></use>
+                    </svg><span>Санкт-Петербург, Пискаревский пр. д. 150 корпус 2, лит. А</span>
+                  </div>
+                  <div class="contacts__info-item">
+                    <svg>
+                      <use xlink:href="./svg/sprite.svg#time"></use>
+                    </svg><span>ПН-ПТ: с 9:00 до 18:00</span>
+                  </div>
+                  <div class="contacts__info-item">
+                    <svg>
+                      <use xlink:href="./svg/sprite.svg#email"></use>
+                    </svg><span>info@retail-logistica.com</span>
+                  </div>
+                </div>
+                <div class="contacts__phone">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#phone"></use>
+                  </svg><span>+7 (495) 103-46-13</span>
+                </div>
+              </div>
+              <div class="contacts__col">
+                <div class="contacts__map">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2ef1d71cf01cdcebc06d54a8fbd108f36edb4ac3da3801ba678543eab48c451e&amp;amp;source=constructor" width="620" height="454" frameborder="0"></iframe>
+                </div>
+                <div class="contacts__info">
+                  <div class="contacts__info-item">
+                    <svg>
+                      <use xlink:href="./svg/sprite.svg#marker"></use>
+                    </svg><span>Ногинский район с. Кудиново АО Кудиново стр. 3</span>
+                  </div>
+                  <div class="contacts__info-item">
+                    <svg>
+                      <use xlink:href="./svg/sprite.svg#time"></use>
+                    </svg><span>ПН-ПТ: с 9:00 до 18:00</span>
+                  </div>
+                  <div class="contacts__info-item">
+                    <svg>
+                      <use xlink:href="./svg/sprite.svg#email"></use>
+                    </svg><span>info@retail-logistica.com</span>
+                  </div>
+                </div>
+                <div class="contacts__phone">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#phone"></use>
+                  </svg><span>+7 (495) 103-46-13</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__copyright">© 2020 «Ритейл логистика»</div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

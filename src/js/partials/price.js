@@ -13,6 +13,15 @@ $(document).ready(function () {
 		})
 	});
 
+	$('.price__tab').click(function () {
+		if (!$(this).hasClass('price__tab--active')) {
+			$(this).parent().find('.price__tab--active').removeClass('price__tab--active');
+			$(this).addClass('price__tab--active');
+			/*$('.price__tab-content').hide().eq($(this).index()).fadeIn(300);*/
+			$(this).parent().siblings('.price__tab-content-wrapper').children().hide().eq($(this).index()).fadeIn(300);
+		}
+	});
+
 	function rotateArrow(e) {
 		e.children('svg').toggleClass('price__accordion-title--rotate');
 	}

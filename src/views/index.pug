@@ -22,13 +22,13 @@ block main
 						li.first-screen__list-item Междугородняя доставка FTL
 						li.first-screen__list-item Доставка сборного груза
 					+button('Рассчитать стоимость', 'first-screen__button', 'calculate')
-				.first-screen__scroll-down
+				a(href="#price").first-screen__scroll-down
 					svg
 						use(xlink:href='./svg/sprite.svg#arrow-down')
 
 
 
-		.price
+		#price.price
 			.container
 				+title('Тарифы')
 				.price__accordion
@@ -42,102 +42,7 @@ block main
 							.price__tabs
 								.price__tab.price__tab--active Из Москвы
 								.price__tab Из Санкт-Петербурга
-							.price__tab-content
-								table.price__table
-									thead
-										tr
-											th
-											th <span>до</span> 100 кг
-											th <span>до</span> 200 кг
-											th <span>до</span> 500 кг
-											th <span>до</span> 1000 кг
-											th <span>до</span> 1500 кг
-											th <span>до</span> 3000 кг
-											th <span>до</span> 4999 кг
-											th <span>от</span> 5000 кг
-									tbody
-										tr
-											td Санкт-петербург
-											td 5,99 ₽
-											td 5,99 ₽
-											td 5,99 ₽
-											td 5,7 ₽
-											td 5,6 ₽
-											td 5,5 ₽
-											td 5,1 ₽
-											td 4,75 ₽
-										tr
-											td Казань
-											td 9,99 ₽
-											td 9,79 ₽
-											td 9,49 ₽
-											td 9,19 ₽
-											td 8,99 ₽
-											td 8,69 ₽
-											td 7,99 ₽
-											td 7,79 ₽
-										tr
-											td Ростов-на-Дону
-											td 10,79 ₽
-											td 10,69 ₽
-											td 9,89 ₽
-											td 9,79 ₽
-											td 9,69 ₽
-											td 9,49 ₽
-											td 8,19 ₽
-											td 8,89 ₽
-										tr
-											td Самара
-											td 9,79 ₽
-											td 9,69 ₽
-											td 9,1 ₽
-											td 8,9 ₽
-											td 8,79 ₽
-											td 8,49 ₽
-											td 8,2 ₽
-											td 8,79 ₽
-										tr
-											td Волгоград
-											td 7,8 ₽
-											td 7,8 ₽
-											td 7,8 ₽
-											td 7,6 ₽
-											td 7,4 ₽
-											td 7,3 ₽
-											td 7,2 ₽
-											td 7 ₽
-										tr
-											td Краснодар
-											td 10,79 ₽
-											td 10,69 ₽
-											td 9,89 ₽
-											td 9,79 ₽
-											td 9,69 ₽
-											td 9,49 ₽
-											td 8,19 ₽
-											td 8,89 ₽
-										tr
-											td Екатеринбург
-											td 11,59 ₽
-											td 11,49 ₽
-											td 10,89 ₽
-											td 10,59 ₽
-											td 10,39 ₽
-											td 10,1 ₽
-											td 9,79 ₽
-											td 9,3 ₽
-								table.price__table
-							.price__min-cost *Минимальная стоимость перевозки – 400 ₽
-					.price__accordion-item
-						.price__accordion-title
-							span Тарифы адресной доставки от/до терминала в филиалах
-							svg
-								use(xlink:href='./svg/sprite.svg#accordion-arrow')
-						.price__accordion-content
-							.price__note Тарифы на перевозку указаны <span>в рублях за 1 кг груза</span>. Тариф для объемных грузов рассчитывается при плотности 1 куб.м = 250 кг.
-								.price__tabs
-									.price__tab.price__tab--active Из Москвы
-									.price__tab Из Санкт-Петербурга
+							.price__tab-content-wrapper
 								.price__tab-content
 									table.price__table
 										thead
@@ -222,8 +127,273 @@ block main
 												td 10,1 ₽
 												td 9,79 ₽
 												td 9,3 ₽
+									.price__min-cost *Минимальная стоимость перевозки – 400 ₽
+								.price__tab-content
 									table.price__table
-								.price__min-cost *Минимальная стоимость перевозки – 400 ₽
+										thead
+											tr
+												th
+												th <span>до</span> 100 кг
+												th <span>до</span> 200 кг
+												th <span>до</span> 500 кг
+												th <span>до</span> 1000 кг
+												th <span>до</span> 1500 кг
+												th <span>до</span> 3000 кг
+												th <span>до</span> 4999 кг
+												th <span>от</span> 5000 кг
+										tbody
+											tr
+												td Санкт-петербург
+												td 5,99 ₽
+												td 5,99 ₽
+												td 5,99 ₽
+												td 5,7 ₽
+												td 5,6 ₽
+												td 5,5 ₽
+												td 5,1 ₽
+												td 4,75 ₽
+											tr
+												td Казань
+												td 9,99 ₽
+												td 9,79 ₽
+												td 9,49 ₽
+												td 9,19 ₽
+												td 8,99 ₽
+												td 8,69 ₽
+												td 7,99 ₽
+												td 7,79 ₽
+											tr
+												td Ростов-на-Дону
+												td 10,79 ₽
+												td 10,69 ₽
+												td 9,89 ₽
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,49 ₽
+												td 8,19 ₽
+												td 8,89 ₽
+											tr
+												td Самара
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,1 ₽
+												td 8,9 ₽
+												td 8,79 ₽
+												td 8,49 ₽
+												td 8,2 ₽
+												td 8,79 ₽
+											tr
+												td Волгоград
+												td 7,8 ₽
+												td 7,8 ₽
+												td 7,8 ₽
+												td 7,6 ₽
+												td 7,4 ₽
+												td 7,3 ₽
+												td 7,2 ₽
+												td 7 ₽
+											tr
+												td Краснодар
+												td 10,79 ₽
+												td 10,69 ₽
+												td 9,89 ₽
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,49 ₽
+												td 8,19 ₽
+												td 8,89 ₽
+											tr
+												td Екатеринбург
+												td 11,59 ₽
+												td 11,49 ₽
+												td 10,89 ₽
+												td 10,59 ₽
+												td 10,39 ₽
+												td 10,1 ₽
+												td 9,79 ₽
+												td 9,3 ₽
+									.price__min-cost *Минимальная стоимость перевозки – 400 ₽
+					.price__accordion-item
+						.price__accordion-title
+							span Тарифы адресной доставки от/до терминала в филиалах
+							svg
+								use(xlink:href='./svg/sprite.svg#accordion-arrow')
+						.price__accordion-content
+							.price__note Тарифы на перевозку указаны <span>в рублях за 1 кг груза</span>. Тариф для объемных грузов рассчитывается при плотности 1 куб.м = 250 кг.
+							.price__tabs
+								.price__tab.price__tab--active Из Москвы
+								.price__tab Из Санкт-Петербурга
+							.price__tab-content-wrapper
+								.price__tab-content
+									table.price__table
+										thead
+											tr
+												th
+												th <span>до</span> 100 кг
+												th <span>до</span> 200 кг
+												th <span>до</span> 500 кг
+												th <span>до</span> 1000 кг
+												th <span>до</span> 1500 кг
+												th <span>до</span> 3000 кг
+												th <span>до</span> 4999 кг
+												th <span>от</span> 5000 кг
+										tbody
+											tr
+												td Санкт-петербург
+												td 5,99 ₽
+												td 5,99 ₽
+												td 5,99 ₽
+												td 5,7 ₽
+												td 5,6 ₽
+												td 5,5 ₽
+												td 5,1 ₽
+												td 4,75 ₽
+											tr
+												td Казань
+												td 9,99 ₽
+												td 9,79 ₽
+												td 9,49 ₽
+												td 9,19 ₽
+												td 8,99 ₽
+												td 8,69 ₽
+												td 7,99 ₽
+												td 7,79 ₽
+											tr
+												td Ростов-на-Дону
+												td 10,79 ₽
+												td 10,69 ₽
+												td 9,89 ₽
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,49 ₽
+												td 8,19 ₽
+												td 8,89 ₽
+											tr
+												td Самара
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,1 ₽
+												td 8,9 ₽
+												td 8,79 ₽
+												td 8,49 ₽
+												td 8,2 ₽
+												td 8,79 ₽
+											tr
+												td Волгоград
+												td 7,8 ₽
+												td 7,8 ₽
+												td 7,8 ₽
+												td 7,6 ₽
+												td 7,4 ₽
+												td 7,3 ₽
+												td 7,2 ₽
+												td 7 ₽
+											tr
+												td Краснодар
+												td 10,79 ₽
+												td 10,69 ₽
+												td 9,89 ₽
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,49 ₽
+												td 8,19 ₽
+												td 8,89 ₽
+											tr
+												td Екатеринбург
+												td 11,59 ₽
+												td 11,49 ₽
+												td 10,89 ₽
+												td 10,59 ₽
+												td 10,39 ₽
+												td 10,1 ₽
+												td 9,79 ₽
+												td 9,3 ₽
+									.price__min-cost *Минимальная стоимость перевозки – 400 ₽
+								.price__tab-content
+									table.price__table
+										thead
+											tr
+												th
+												th <span>до</span> 100 кг
+												th <span>до</span> 200 кг
+												th <span>до</span> 500 кг
+												th <span>до</span> 1000 кг
+												th <span>до</span> 1500 кг
+												th <span>до</span> 3000 кг
+												th <span>до</span> 4999 кг
+												th <span>от</span> 5000 кг
+										tbody
+											tr
+												td Санкт-петербург
+												td 5,99 ₽
+												td 5,99 ₽
+												td 5,99 ₽
+												td 5,7 ₽
+												td 5,6 ₽
+												td 5,5 ₽
+												td 5,1 ₽
+												td 4,75 ₽
+											tr
+												td Казань
+												td 9,99 ₽
+												td 9,79 ₽
+												td 9,49 ₽
+												td 9,19 ₽
+												td 8,99 ₽
+												td 8,69 ₽
+												td 7,99 ₽
+												td 7,79 ₽
+											tr
+												td Ростов-на-Дону
+												td 10,79 ₽
+												td 10,69 ₽
+												td 9,89 ₽
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,49 ₽
+												td 8,19 ₽
+												td 8,89 ₽
+											tr
+												td Самара
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,1 ₽
+												td 8,9 ₽
+												td 8,79 ₽
+												td 8,49 ₽
+												td 8,2 ₽
+												td 8,79 ₽
+											tr
+												td Волгоград
+												td 7,8 ₽
+												td 7,8 ₽
+												td 7,8 ₽
+												td 7,6 ₽
+												td 7,4 ₽
+												td 7,3 ₽
+												td 7,2 ₽
+												td 7 ₽
+											tr
+												td Краснодар
+												td 10,79 ₽
+												td 10,69 ₽
+												td 9,89 ₽
+												td 9,79 ₽
+												td 9,69 ₽
+												td 9,49 ₽
+												td 8,19 ₽
+												td 8,89 ₽
+											tr
+												td Екатеринбург
+												td 11,59 ₽
+												td 11,49 ₽
+												td 10,89 ₽
+												td 10,59 ₽
+												td 10,39 ₽
+												td 10,1 ₽
+												td 9,79 ₽
+												td 9,3 ₽
+									.price__min-cost *Минимальная стоимость перевозки – 400 ₽
 					.price__description-text
 						p Услуги ПРР ( погрузо-разгрузочные работы силами водителя экспедитора) за счёт Экспедитора предоставляются на партии груза,
 							|  расчётный вес которых не превышает 20 кг, где вес и объём одного грузового места не превышает 20 кг и 0,09 м3 соответственно,
@@ -275,3 +445,251 @@ block main
 							+input('checkbox', 'Негабаритный груз', 'oversized_cargo')
 						.calculate__input-row
 							+input('text', 'Добавить жесткую упаковку', 'hard_package', '0')
+
+					.calculate__request
+						.calculate__bg
+							img(src='./img/pattern-black.png' alt='pattern-black')
+							img(src='./img/pattern-gray.png' alt='pattern-gray')
+						.calculate__block
+							.calculate__total
+								.calculate__total-text Итоговая стоимость услуг
+								.calculate__total-price 1 760 ₽
+								.calculate__total-note Доставка на следующий день
+							.calculate__price-item Перевозка от двери до двери
+								.calculate__sum.calculate__sum--door 3 810 ₽
+							.calculate__price-item Стоимость межтерминальной перевозки
+								.calculate__sum.calculate__sum--terminal 1 760 ₽
+							.calculate__tariff
+								.calculate__tariff-row
+									.calculate__tariff-name Ваш тариф
+									.calculate__tariff-price 5.99 ₽/кг
+								.calculate__tariff-row
+									.calculate__tariff-name Доставка по Москве
+									.calculate__tariff-price 1 150 ₽
+								.calculate__tariff-row
+									.calculate__tariff-name Доставка по Санкт-Петербургу
+									.calculate__tariff-price 900 ₽
+							+button('Отправить заявку', 'calculate__button')
+							.calculate__print-report Распечатать отчет
+
+
+
+
+
+		.documentation
+			.container
+				+title('Документация')
+				.documentation__files
+					a(href='#').documentation__link
+						svg
+							use(xlink:href='./svg/sprite.svg#doc')
+						.documentation__link-wrapper
+							.documentation__name Бланк завки на адресный забор груза
+							.documentation__download Скачать
+					a(href='#').documentation__link
+						svg
+							use(xlink:href='./svg/sprite.svg#doc')
+						.documentation__link-wrapper
+							.documentation__name Договор на перевозку грузов автомобильным транспортом Ритейл логистика
+							.documentation__download Скачать
+					a(href='#').documentation__link
+						svg
+							use(xlink:href='./svg/sprite.svg#xls')
+						.documentation__link-wrapper
+							.documentation__name Обязательные правила перевозки
+							.documentation__download Скачать
+					a(href='#').documentation__link
+						svg
+							use(xlink:href='./svg/sprite.svg#xls')
+						.documentation__link-wrapper
+							.documentation__name Обязательные правила перевозки
+							.documentation__download Скачать
+					a(href='#').documentation__link
+						svg
+							use(xlink:href='./svg/sprite.svg#doc')
+						.documentation__link-wrapper
+							.documentation__name Бланк завки на адресный забор груза
+							.documentation__download Скачать
+					a(href='#').documentation__link
+						svg
+							use(xlink:href='./svg/sprite.svg#doc')
+						.documentation__link-wrapper
+							.documentation__name Договор на перевозку грузов автомобильным транспортом Ритейл логистика
+							.documentation__download Скачать
+					a(href='#').documentation__link
+						svg
+							use(xlink:href='./svg/sprite.svg#doc')
+						.documentation__link-wrapper
+							.documentation__name Бланк завки на адресный забор груза
+							.documentation__download Скачать
+					a(href='#').documentation__link
+						svg
+							use(xlink:href='./svg/sprite.svg#doc')
+						.documentation__link-wrapper
+							.documentation__name Договор на перевозку грузов автомобильным транспортом Ритейл логистика
+							.documentation__download Скачать
+					a(href='#').documentation__link
+						svg
+							use(xlink:href='./svg/sprite.svg#xls')
+						.documentation__link-wrapper
+							.documentation__name Обязательные правила перевозки
+							.documentation__download Скачать
+
+		.work
+			.container.work__container
+				+title('Как мы работаем', 'work__title')
+				.work__scheme
+
+		.commercial
+			.container.commercial__container
+				.commercial__bg
+					img(src='./img/pattern-gray.png' alt='pattern-gray')
+				.commercial__outer
+					+title('Коммерческая информация')
+					.commercial__block
+						.commercial__nav
+							ul.commercial__tabs
+								li.commercial__tab Отправить груз от адреса
+								li.commercial__tab Отправить груз с терминала
+								li.commercial__tab Ускорить отправку груза с терминала
+								li.commercial__tab Получить груз на адресе
+								li.commercial__tab Получить груз на терминале
+								li.commercial__tab Уточнить информацию о заказе
+								li.commercial__tab.commercial__tab--active Оплата банковской картой
+								li.commercial__tab Оплата по безналичному счету
+								li.commercial__tab Оплата наличными
+								li.commercial__tab Запросить бухгалтерские документы
+								li.commercial__tab Заключить договор
+								li.commercial__tab Автоматизация работы с заказами
+							.commercial__other-question Задать другой вопрос
+						.commercial__content
+							.commercial__content-item 1
+							.commercial__content-item 2
+							.commercial__content-item 3
+							.commercial__content-item 4
+							.commercial__content-item 5
+							.commercial__content-item 6
+							.commercial__content-item(style='display: block;')
+								.commercial__content-title Оплата банковской картой
+								ul
+									li <span>1</span> Повседневная практика показывает, что повышение уровня гражданского сознания обеспечивает широкому кругу (специалистов)
+										|  участие в формировании соответствующих условий активизации.
+									li <span>2</span> В своём стремлении улучшить пользовательский опыт мы упускаем, что некоторые особенности внутренней политики представляют собой не что иное,
+										|  как квинтэссенцию победы маркетинга над разумом и должны быть объединены в целые кластеры себе подобных.
+									li <span>3</span> В рамках спецификации современных стандартов, явные признаки победы институционализации формируют глобальную экономическую сеть
+										|  и при этом - ассоциативно распределены по отраслям!
+									li <span>4</span> Равным образом, внедрение современных методик не даёт нам иного выбора, кроме определения благоприятных перспектив.
+									li <span>5</span> Реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы
+										|  маркетинга над разумом и должны быть представлены в исключительно положительном свете.
+								p Ясность нашей позиции очевидна: начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в
+									|  формировании как самодостаточных, так и внешне зависимых концептуальных решений.
+								p Есть над чем задуматься: реплицированные с зарубежных источников, современные исследования рассмотрены исключительно в разрезе
+									|  маркетинговых и финансовых предпосылок.
+							.commercial__content-item 8
+							.commercial__content-item 9
+							.commercial__content-item 10
+							.commercial__content-item 11
+							.commercial__content-item 12
+
+		.about
+			.container.about__container
+				+title('О компании')
+				.about__block
+					.about__img-group
+						.about__circle
+						img.about__pattern(src='./img/pattern-gray.png' alt='pattern-gray')
+						img.about__car(src='./img/pogr.png' alt='pogr')
+					.about__content
+						.about__title «Ритейл логистика»
+						.about__description
+							p Повседневная практика показывает, что убеждённость некоторых оппонентов предоставляет широкие возможности для вывода текущих активов.
+								|  Каждый из нас понимает очевидную вещь: понимание сути ресурсосберегающих технологий говорит о возможностях вывода текущих активов.
+							p Задача организации, в особенности же синтетическое тестирование играет важную роль в формировании дальнейших направлений развития.
+								|  Каждый из нас понимает очевидную вещь: высокотехнологичная концепция общественного уклада способствует подготовке и реализации
+								|  укрепления моральных ценностей.
+						.about__details
+							.about__details-col
+								p ОГРН 1187746375442
+								p ИНН 9721064092
+								p КПП  772101001
+							.about__details-col
+								p Юридический адрес: 109428, г. Москва, Рязанский проспект, д.16, строение 3,помещение  23
+								p Расчетный счет 40702810001700005584
+
+
+		.delivery
+			.container
+				+title('Паллетная доставка в гипермаркеты и РЦ')
+				.delivery__block
+					.delivery__col
+						.delivery__description
+							p Компания «Ритейл Логистика» осуществляет доставку товаров во все крупные сетевые магазины России на привлекательных условиях для
+								|  поставщиков FMCG и DIY товаров. Специальные тарифы на паллетную доставку, услуга «возврат документов», точное время и дата сдачи
+								|  груза – мы делаем все, чтобы нашим клиентам было комфортно!
+							p Мы предоставляем следующие услуги:
+							ul
+								li перевозка груза от нашего склада в г.Москве до склада в городе получателя;
+								li складская обработка груза;
+								li автоэкспедирование до получателя;
+								li выезд за пределы города до 50 км на круг;
+								li погрузо-разгрузочные работы и НДС 20%.
+						.delivery__download-price Скачать паллетный прайс
+					.delivery__col
+						img(src='./img/delivery.jpg' alt='delivery')
+
+		.form
+			.container
+				.form__title Остались вопросы?
+				.form__subtitle Задайте их нашему менеджеру. Он ответит в течение 15 минут
+				form(action='' method='POST')
+					.form__inputs
+						+input('text', '', 'your_name', '', 'Ваше имя')
+						+input('text', '', 'phone', '', '+7 (___) ___ __-__')
+						+input('text', '', 'email', '', 'Ваш email')
+					+button('Отправить заявку', 'form__button')
+
+		.contacts
+			.container.contacts__container
+				+title('Наши контакты', 'contacts__title')
+				.contacts__block
+					.contacts__col
+						.contacts__map
+							iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3A2ef1d71cf01cdcebc06d54a8fbd108f36edb4ac3da3801ba678543eab48c451e&amp;source=constructor' width='620' height='454' frameborder='0')
+						.contacts__info
+							.contacts__info-item
+								svg
+									use(xlink:href='./svg/sprite.svg#marker')
+								span Санкт-Петербург, Пискаревский пр. д. 150 корпус 2, лит. А
+							.contacts__info-item
+								svg
+									use(xlink:href='./svg/sprite.svg#time')
+								span ПН-ПТ: с 9:00 до 18:00
+							.contacts__info-item
+								svg
+									use(xlink:href='./svg/sprite.svg#email')
+								span info@retail-logistica.com
+						.contacts__phone
+							svg
+								use(xlink:href='./svg/sprite.svg#phone')
+							span +7 (495) 103-46-13
+					.contacts__col
+						.contacts__map
+							iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3A2ef1d71cf01cdcebc06d54a8fbd108f36edb4ac3da3801ba678543eab48c451e&amp;source=constructor' width='620' height='454' frameborder='0')
+						.contacts__info
+							.contacts__info-item
+								svg
+									use(xlink:href='./svg/sprite.svg#marker')
+								span Ногинский район с. Кудиново АО Кудиново стр. 3
+							.contacts__info-item
+								svg
+									use(xlink:href='./svg/sprite.svg#time')
+								span ПН-ПТ: с 9:00 до 18:00
+							.contacts__info-item
+								svg
+									use(xlink:href='./svg/sprite.svg#email')
+								span info@retail-logistica.com
+						.contacts__phone
+							svg
+								use(xlink:href='./svg/sprite.svg#phone')
+							span +7 (495) 103-46-13
+

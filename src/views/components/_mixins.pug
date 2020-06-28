@@ -8,11 +8,11 @@ mixin button(text, className, svgName)
 mixin title(text, className)
 	.title(class= className)!= text
 
-mixin input(type, labelText, name, value)
+mixin input(type, labelText, name, value, placeholder)
 	if type === 'text'
 		label.text-label
 			span= labelText
-			input(type='text', name=name, value=value)
+			input(type='text', name=name, value=value, placeholder=placeholder)
 	if type === 'checkbox'
 		label.checkbox-label
 			input(type='checkbox', name=name, value=value)
