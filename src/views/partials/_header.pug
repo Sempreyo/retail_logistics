@@ -1,1 +1,27 @@
-header
+header.header
+	.container.header__container
+		a(href='/').header__logo
+			img(src='./img/logo.png' alt='riteil-logistics')
+		.header__wrapper
+			.header__contacts
+				.header__contacts-item
+					svg
+						use(xlink:href='./svg/sprite.svg#marker')
+					span г. Москва, Рязанский проспект дом 16.стр 4
+				.header__contacts-item
+					svg
+						use(xlink:href='./svg/sprite.svg#phone')
+					a(href='tel:+74951034613') +7 (495) 103-46-13
+			nav.header__menu
+				li
+					a(href='#') Тарифы
+				li
+					a(href='#') Рассчитать стоимость
+				li
+					a(href='#') Коммерческая информация
+				li
+					a(href='#') Как мы работаем
+				li
+					a(href='#') О компании
+				li
+					a(href='#') Оставить заявку

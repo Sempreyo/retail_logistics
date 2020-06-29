@@ -126,7 +126,6 @@ $(document).ready(function () {
 		if (!$(this).hasClass('price__tab--active')) {
 			$(this).parent().find('.price__tab--active').removeClass('price__tab--active');
 			$(this).addClass('price__tab--active');
-			/*$('.price__tab-content').hide().eq($(this).index()).fadeIn(300);*/
 			$(this).parent().siblings('.price__tab-content-wrapper').children().hide().eq($(this).index()).fadeIn(300);
 		}
 	});

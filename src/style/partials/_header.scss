@@ -1,0 +1,65 @@
+.header {
+	padding: 20px 0;
+	background-color: #1a1920;
+	opacity: 0.9;
+	color: $white;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__contacts-item {
+		display: flex;
+
+		svg {
+			fill: $red;
+			width: 18px;
+			height: 18px;
+			margin-right: 5px;
+		}
+
+		&:first-child {
+			font-size: 15px;
+			color: #aba8be;
+		}
+
+		&:last-child {
+			margin-left: 15px;
+			a {
+				font-size: 18px;
+				color: $white;
+			}
+		}
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 18px;
+
+		li + li {
+			margin-left: 25px;
+		}
+
+		a {
+			color: $white;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

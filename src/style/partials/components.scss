@@ -2,27 +2,49 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 330px;
-	min-height: 45px;
+	width: 100%;
+	min-height: 25px;
 	background-color: $red;
+	border: 1px solid $red;
 	border-radius: 23px;
 	font-size: 16px;
 	line-height: 32px;
 	color: $white;
 	cursor: pointer;
+	transition: all 0.3s ease;
+
+	@media (min-width: $tMin) {
+		width: 330px;
+		min-height: 45px;
+	}
+
+	&:hover {
+		background-color: $white;
+		color: $red;
+
+		svg {
+			fill: $red;
+		}
+	}
 
 	svg {
 		margin-right: 6px;
+		transition: fill 0.3s ease;
 	}
 }
 
 .title {
-	font-size: 36px;
-	line-height: 52px;
+	font-size: 24px;
+	line-height: 34px;
 	font-weight: bold;
 	text-transform: uppercase;
 	position: relative;
 	padding-bottom: 4px;
+
+	@media (min-width: $tMin) {
+		font-size: 36px;
+		line-height: 52px;
+	}
 
 	&::after {
 		content: '';
